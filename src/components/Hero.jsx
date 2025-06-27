@@ -2,6 +2,7 @@ import { default as blob } from "../assets/blob.svg";
 import ReactTypingEffect from "react-typing-effect";
 import { GoMarkGithub } from "react-icons/go";
 import { BsLinkedin } from "react-icons/bs";
+import {default as vandaleng} from "../assets/vandaleng.png"
 
 const Hero = () => {
   var code = `let button_menu = document.querySelector(".header_button");
@@ -42,32 +43,31 @@ function addEffectWriting(element, time) {
     >
       <div className="py-4 md:w-1/2 md:flex-col">
         <p className="inline py-1 text-5xl font-black text-primary md:text-7xl">
-          Y
+          V
         </p>
         <ReactTypingEffect
           speed="300"
           typingDelay="150"
           eraseDelay="1000"
           className="py-1 text-5xl font-black text-primary md:text-7xl"
-          text="oumna Jaza"
+          text="anda Leng"
         />
-        <h2 className="py-1 text-3xl font-bold">Software Engineer</h2>
+        <h2 className="py-1 text-3xl font-bold">Web developer</h2>
         <p className="py-1 text-xl md:w-3/4">
-          I'm a software engineering fresh graduate and a cybersecurity analyst
-          with a passion for front-end development, mobile applications, and
-          UI/UX design. I strive to create user-friendly and visually appealing
-          software.
+         I'm a web developer with a strong foundation in front-end technologies and a passion 
+         for building responsive, user-friendly websites. I enjoy creating clean, modern designs 
+         and delivering great user experiences through UI/UX best practices.
         </p>
         <div className="flex items-center justify-center gap-4 py-4 md:justify-start md:py-6">
           <a
             className="inline-flex items-center gap-2"
-            href="https://github.com/Yomna-J"
+            href="https://github.com/VandaLeng"
           >
             <GoMarkGithub className="text-2xl" />
           </a>
           <a
             className="inline-flex items-center gap-2"
-            href="https://www.linkedin.com/in/youmna-jaza-373016233/"
+            href="https://www.linkedin.com/in/vanda-leng-5bb8b5344/"
           >
             <BsLinkedin className="text-2xl" />
           </a>
@@ -80,7 +80,15 @@ function addEffectWriting(element, time) {
             className="absolute top-0 left-0 w-full "
             src={blob}
             alt="blob"
+            
           />
+          {/* Extra Large Circular Profile Image */}
+          <img
+            className="absolute top-[45%] left-1/2 w-[300px] h-[400px] object-cover z-10 transform -translate-x-1/2 -translate-y-1/2"
+            src={vandaleng}
+            alt="Vanda Leng"
+          />
+
         </div>
       </div>
     </div>

@@ -14,28 +14,28 @@ const Footer = () => {
       <div className="w-full md:flex md:flex-row md:justify-between md:gap-5 md:px-4">
         <a href="#">
           <h2 className="font-impact text-3xl">
-            <span className="text-primary">&lt;Y</span>oumna
+            <span className="text-primary">&lt;V</span>anda
             <span className="text-primary">/&gt; </span>
           </h2>
         </a>
         <div className="flex flex-col items-center gap-4 py-4 md:flex-row md:py-0">
           <a
             className="inline-flex items-center gap-2"
-            href="https://github.com/Yomna-J"
+            href="https://github.com/VandaLeng"
           >
-            <GoMarkGithub /> Yomna-J
+            <GoMarkGithub /> Vanda_L
           </a>
           <a
             className="inline-flex items-center gap-2"
-            href="https://www.linkedin.com/in/youmna-jaza-373016233/"
+             href="https://www.linkedin.com/in/vanda-leng-5bb8b5344/"
           >
-            <BsLinkedin /> Youmna Jaza
+            <BsLinkedin /> Vanda Leng
           </a>
           <a
             className="inline-flex items-center gap-2"
-            href="mailto:youmnajaza@gmail.com"
+            href="vandaleng21@gmail.com"
           >
-            <HiMail /> youmnajaza@gmail.com
+            <HiMail /> vandaleng21@gmail.com
           </a>
         </div>
       </div>
@@ -53,7 +53,7 @@ const Footer = () => {
           className="hover:text-secondary"
           href="https://github.com/Yomna-J/Portfolio"
         >
-          Youmna Jaza
+          Vanda Leng
         </a>
       </h1>
     </div>

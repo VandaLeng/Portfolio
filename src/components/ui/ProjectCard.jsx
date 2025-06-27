@@ -15,7 +15,7 @@ const ProjectCard = ({
 
   return (
     <div
-      className={`flex flex-col rounded-2xl bg-darkPrimary md:flex-row ${orderClass}`}
+      className={`flex flex-col rounded-2xl bg-darkPrimary shadow-lg hover:bg-red-700 transition-colors duration-300 md:flex-row ${orderClass}`}
     >
       <div
         data-aos-easing="ease-in-out"
@@ -26,7 +26,7 @@ const ProjectCard = ({
           {github && (
             <a href={github}>
               <GoMarkGithub
-                className="text-secondary hover:text-darkGray"
+                className="text-red-100 hover:text-white"
                 size={20}
               />
             </a>
@@ -34,15 +34,15 @@ const ProjectCard = ({
           {website && (
             <a href={website}>
               <HiLink
-                className="text-secondary hover:text-darkGray"
+                className="text-red-100 hover:text-white"
                 size={20}
               />
             </a>
           )}
         </div>
-        <h1 className="py-1 text-3xl font-extrabold md:text-4xl ">{title}</h1>
-        <h1 className="pb-7 text-2xl font-bold md:text-2xl ">{subtitle}</h1>
-        <p>{description}</p>
+        <h1 className="py-1 text-3xl font-extrabold md:text-4xl">{title}</h1>
+        <h1 className="pb-7 text-2xl font-bold md:text-2xl">{subtitle}</h1>
+        <p className="font-roboto">{description}</p>
         <div className="flex flex-wrap items-center justify-center gap-4 py-4 md:py-6">
           {tools.map((tool) => (
             <img key={tool.id} alt={tool.alt} src={tool.img} />

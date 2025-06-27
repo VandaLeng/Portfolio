@@ -1,8 +1,9 @@
-import { default as Hurairah } from "../assets/hurairah.svg";
 import p4 from "../assets/p4.png";
 import p3 from "../assets/p3.png";
-import p5 from "../assets/p5.png";
-import p6 from "../assets/p6.png";
+import p5 from "../assets/OOPImage.jpg";
+import p6 from "../assets/Library.png";
+import p1 from "../assets/p1.png";
+import p2 from "../assets/Note-taker.png";
 import MiniProjectCard from "./ui/MiniProjectCard";
 import { default as blob } from "../assets/blob.svg";
 import data from "../data";
@@ -14,42 +15,40 @@ const Projects = () => {
       id="projects"
       className="projects mx-auto flex flex-col justify-center gap-12 p-4 text-center md:items-center md:justify-between lg:max-w-7xl"
     >
-      <h1 className="py-10 text-3xl font-bold text-primary md:text-4xl ">
+      <h1 className="py-10 text-3xl font-bold text-primary md:text-4xl">
         Projects
       </h1>
       {/* RECENT PROJECTS */}
       <ProjectCard
-        title="Bookish"
-        subtitle="Full-stack Bookstore"
-        description="Bookish is a full-stack responsive fake online bookstore meticulously crafted for mastering TypeScript skills. This dynamic endeavor seamlessly integrates various technologies, including the Google Books API, RESTful API, and Stripe for secure payment processing, utilizing Node.js with Express.js on the backend and React on the frontend."
-        picture={p5}
-        github="https://github.com/Yomna-J/Bookish"
-        website="https://bookish-client-one.vercel.app"
+        title="Virtual Company One (VC1) Management System Project"
+        subtitle="Full-stack Ecommerce"
+        description="This project focused on building an internal management system for Virtual Company One (VC1) to streamline and automate the employee's team-related projects. The system allowed employees to submit, approve, or reject corporate events. We developed the system using PHP with the MVC (Model-View-Controller) structure and used a MySQL database to store data."
+        picture={p1}
+        github="https://github.com/Charyna-chab/VC1-Group8-Drink"
         tools={data.project3}
       />
       <ProjectCard
-        title="Fast Box"
-        subtitle="Landing Page"
-        description="FastBox is a courier and product delivery services website. The UI is designed by uitaskteam on Figma with some adjustments made to create the mobile design."
-        picture="https://github.com/Yomna-J/fastbox/raw/main/resources/demo.png"
-        github="https://github.com/Yomna-J/fastbox"
-        website="https://fastbox-opal.vercel.app"
+        title="OOP-Project(Movie Booking)"
+        subtitle="Managing System"
+        description="This project is developed to demonstrate concepts of Object-Oriented Programming (OOP). The main goal is to showcase OOP principles through code whose output is displayed in the console log."
+        picture={p5}
+        github="https://github.com/Seavmey-Yem/MovieBookingSystem-A3"
         tools={data.project2}
         isImageOnLeft={true}
       />
       <ProjectCard
-        title="LandGPT"
+        title="Project Note Taker (Note Taker App)"
         subtitle="Landing Page"
-        description="LandGPT is a project that was introduced as a solution during the SaudiChatGPT Hackathon that allows users to create websites using ChatGPT API."
-        picture={p6}
-        github="https://github.com/Yomna-J/SaudichatGPTHackathon-LandGPT"
+        description="A feature-rich note-taking application with cloud sync, reminders, and categorization. Available on both Android and iOS platforms with a clean, minimalist design. The app allows users to create, edit, and organize notes with rich text formatting, attach images, and set reminders. We implemented real-time synchronization across devices and offline functionality for a seamless user experience."
+        picture={p2}
+        github="https://github.com/Sokleap-Seng/project-Note-Taker-G5"
         tools={data.project4}
       />
       <ProjectCard
-        title="Hurairah"
-        subtitle="Graduation Project"
-        description="A mobile application that allows the users to find veterinary or veterinarian that matches their needs and to view all information related to each veterinary such as their services, employed veterinarians, other users’ reviews, and more. In addition to being able to create posts to communicate with the community."
-        picture={Hurairah}
+        title="PROJECT LIBRARY (static website interface)"
+        subtitle="Static Website"
+        description="Library Project (Static Website Interface), I worked from 21st September 2024 to 4th November 2024. My team and I developed a static website for the library CSA. We structured sections according to each user's needs and implemented a clean, modern design. We used HTML, CSS, and JavaScript to create a website that is made responsive for different devices."
+        picture={p6}
         tools={data.project1}
         isImageOnLeft={true}
       />
@@ -60,8 +59,7 @@ const Projects = () => {
           github="https://github.com/Yomna-J/public_transport_app_Flutter"
           picture="https://github.com/Yomna-J/public_transport_app_Flutter/raw/main/ui.jpg"
           title="Public Transport Application - UI"
-          description="Mobile application that allows users to check available transports and buy
-          tickets"
+          description="Mobile application that allows users to check available transports and buy tickets"
         >
           {data.card1.map((tool) => {
             return <img key={tool.id} alt={tool.alt} src={tool.img} />;
